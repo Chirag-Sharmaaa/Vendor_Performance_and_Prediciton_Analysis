@@ -21,8 +21,8 @@ Effective inventory and sales management are critical for optimizing profitabili
 ```plaintext
 Vendor_Performance_Analysis/
 │
-├── data/                              # Original raw datasets (hosted on Drive 🔗)
-├── CSVs_Created/                      # Processed summary CSVs (from Python EDA)
+├── Raw_Datasets/                      # Original raw datasets (hosted on Drive 🔗)
+├── All_CSVs/                          # Processed summary CSVs (from Python EDA)
 │
 ├── db_ingestion.ipynb                 # Python code to ingest CSVs into PostgreSQL
 ├── sql_eda.ipynb                      # SQL queries for initial exploration
