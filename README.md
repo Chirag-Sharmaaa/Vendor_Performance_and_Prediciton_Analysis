@@ -60,3 +60,43 @@ Vendor_Performance_Analysis/
   - `StockTurnover`
   - `UnitPurchasePrice`
   - `UnsoldInventoryValue`
+
+
+## 💼 Business Problem Solving
+
+### 🧩 Problem 1: Identify Underperforming Brands
+- Quantile-based thresholds were set on `TotalSalesDollar` and `ProfitMargin`.
+- Brands with **low sales but high margins** were flagged.
+- 📈 A **scatter plot** visualized underperforming brands clearly.
+
+---
+
+### 🧩 Problem 2: Top Vendors & Brands by Sales
+- Ranked **top 10 vendors and brands** by `TotalSalesDollar` and `GrossProfit`.
+- 📊 Used **horizontal bar charts** and a **Pareto chart** to visualize their contribution to total sales and profit.
+
+---
+
+### 🧩 Problem 3: Bulk Purchase vs Unit Cost
+- Introduced a new derived feature: `OrderSize` categorized into Small, Medium, and Large.
+- 📉 Found that **bulk buyers received ~72% cheaper prices** on average.
+- Insight supports designing **pricing discounts** for high-volume vendors.
+
+---
+
+### 🧩 Problem 4: Low Inventory Turnover
+- Identified vendors with `StockTurnover < 1`, indicating poor inventory movement.
+- 📌 **Top 10 vendors** with lowest turnover were highlighted for further inventory optimization.
+
+---
+
+### 🧩 Problem 5: Locked Capital in Unsold Inventory
+- Derived feature: `UnsoldInventoryValue = (PurchaseQty - SalesQty) × PurchasePrice`
+- Ranked vendors by **capital locked in unsold stock**.
+- 📉 Used a **donut chart** to visualize top contributors to inventory-based capital blockage.
+
+---
+
+### 🧪 Bonus Insight: Profit Margin Confidence Intervals
+- Compared **95% Confidence Intervals** of margins for top-performing vs underperforming vendors.
+- Surprisingly, **low-performing vendors had higher average margins**, suggesting potential pricing or volume misalignment.
