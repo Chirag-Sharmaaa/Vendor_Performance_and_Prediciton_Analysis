@@ -2,6 +2,7 @@
 
 This end-to-end data analytics project investigates vendor sales, purchases, and inventory performance using SQL, Python, and Power BI. It aims to provide actionable insights to the business by solving five core business problems based on real-world transactional data. The project also includes predictive modeling using machine learning for deeper decision-making.
 
+![Dashboard Screenshot](insert-image-link-here)
 ---
 
 ## 🚀 Problem Statement
@@ -100,3 +101,33 @@ Vendor_Performance_Analysis/
 ### 🧪 Bonus Insight: Profit Margin Confidence Intervals
 - Compared **95% Confidence Intervals** of margins for top-performing vs underperforming vendors.
 - Surprisingly, **low-performing vendors had higher average margins**, suggesting potential pricing or volume misalignment.
+
+
+## 🤖 ML Predictions (Bonus Analysis)
+
+Although not part of the core business questions, we created a separate notebook to apply machine learning techniques for deeper insight and prediction.
+
+| Task                          | Model                  | Accuracy / R²       | Use Case                                      |
+|------------------------------|------------------------|---------------------|-----------------------------------------------|
+| High Performer Classification| Logistic Regression    | 99.9%               | Score vendors as 'High Performer' or not      |
+| Profit Margin Prediction     | Random Forest Regressor| R² ≈ 99.99%         | Predict expected profitability per vendor     |
+| Inventory Risk Classification| Logistic Regression    | 96.7%               | Classify vendors as `Risky` or `Safe`         |
+
+---
+
+## 📊 Power BI Dashboard
+
+An interactive dashboard was built to visually represent:
+
+- 📌 Top-performing vendors and brands  
+- 🔁 Inventory turnover and freight cost  
+- 💰 Distribution of gross profit and unit pricing  
+
+---
+
+## 🛠️ Tools & Technologies Used
+
+- **PostgreSQL** – for database creation and optimized SQL querying  
+- **Python** – `pandas`, `seaborn`, `matplotlib`, `scikit-learn` for analysis and machine learning  
+- **Power BI** – for interactive visual dashboards  
+- **GitHub + Git LFS** – for project version control and large file support  
