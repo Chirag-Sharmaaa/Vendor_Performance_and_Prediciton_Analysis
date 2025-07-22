@@ -2,7 +2,7 @@
 
 This end-to-end data analytics project investigates vendor sales, purchases, and inventory performance using SQL, Python, and Power BI. It aims to provide actionable insights to the business by solving five core business problems based on real-world transactional data. The project also includes predictive modeling using machine learning for deeper decision-making.
 
-![Dashboard Screenshot](insert-image-link-here)
+![Dashboard Screenshot](Raw_Datasets/Dashboard.png)
 ---
 
 ## 🚀 Problem Statement
