@@ -32,3 +32,31 @@ Vendor_Performance_Analysis/
 ├── VendorPerformance_Dashboard.pbix   # Interactive Power BI dashboard
 ├── Project_Summary.docx               # Implementation notes and strategy
 └── README.md                          # 📍 You're here!
+```
+
+## 🧪 Step-by-Step Pipeline
+
+### 1️⃣ Data Ingestion
+
+- All raw CSV files were loaded using **Python** into a **PostgreSQL** database.
+- Due to dataset sizes (up to **1 crore rows**), large files were ingested in **100,000-row chunks** using a custom function.
+- Data was stored in normalized tables like: `purchases`, `sales`, `freight`, `purchase_prices`, etc.
+
+---
+
+### 2️⃣ SQL Analysis & Aggregation
+
+- Multiple **joins and aggregations** were performed to summarize vendor performance.
+- A final summary table called `vendor_sales_summary` was created using **CTEs and JOINS**.
+- This summary table was stored back into the database to avoid redundant computations.
+
+---
+
+### 3️⃣ Python EDA
+
+- **Outlier detection** using boxplots and histograms.
+- **Feature exploration** through correlation heatmaps.
+- **Data cleaning and derived features**, including:
+  - `StockTurnover`
+  - `UnitPurchasePrice`
+  - `UnsoldInventoryValue`
